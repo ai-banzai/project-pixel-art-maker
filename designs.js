@@ -36,6 +36,6 @@ function makeGrid() {
 };
 
 // add event listener on click to every cell
-$("#pixelCanvas").click("td", function(evt){
+$("#pixelCanvas").mousedown("td", function(evt){
   $(evt.target).css("background-color", color);
 });
